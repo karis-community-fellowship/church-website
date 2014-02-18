@@ -1,0 +1,24 @@
+{% set website_name = 'Karis Community Fellowship' %}
+<!DOCTYPE html>
+<html>
+<head>
+	{{ html.charset() }}
+	<title>{{ website_name ~ ' | ' ~ title_for_layout}}</title>
+	{{ html.meta('icon') }}
+    {{ html.css('screen.css') }}
+    {{ _view.fetch('meta') }}
+	{{ _view.fetch('css') }}
+	{{ _view.fetch('script') }}
+</head>
+<body>
+    <nav id="side-nav">
+        <h1 class="logo">
+            {{ html.link(website_name, '/') }}
+        </h1>
+        
+    </nav>
+    <section id="main">
+
+    </section>
+</body>
+</html>
